@@ -88,12 +88,34 @@ for i in l:
 print(l1)
 
 #12
-#add the duplicate values into a list:
-l=[1,2,3,3,2,1,2]
-L1=[]
-dupl=0
+#check the number is between the 1 and 100 or not:
+i=22
+if i>=0 and i<=100:
+    print(i, "is between 1 and  100")
+
+#13
+#check more conditions using if :
+i=10
+if i<10:
+    print(i,"is less than the 10")
+if i>10:
+    print(i," is greater than the 10 ")
+if i==10:
+    print("The number is equal to 10 ")
+    
+#14
+#Check the list and update with cart overload:
+l=[1000,2000,100,3000,4000]
+if sum(l)>10000:
+    print("Cart is overload")
+    
+    
+#15
+#check the list of items and print item is already is there:
+l=[1,2,4,5,1,6]
+l1=[]
 for i in l:
-    if i in l:
-        L1.append(i) 
-        dupl+=1
-print(L1)
+    if i not in  l:
+        l1.append(i)
+else:
+    print("item already exist")    
