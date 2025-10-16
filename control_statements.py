@@ -58,4 +58,42 @@ for i in a:
         print("Vowels are ",i)
         b+=1
 print("Total vowels are ",b)
+
+#9
+#check the consonents of a given word:
+a="Abdullah sir is teaching python"
+c=0
+for i in a:
+    if i not in "AEIOUaeiou":
+        print("Consonents are ",i)
+        c+=1
+print("The total consonents are ", c)
+
+#10
+#check the number is greater than other or not :
+a=20
+b=30
+if a >b:
+    print(a, " is greater than  ",b)
+if b>a:
+    print(b," is greater than ",a)
     
+#11
+#remove the duplicates in a list of elements using not in and print the values:
+l=[1,2,3,4,1,2,3,4,1]
+l1=[]
+for i in l:
+    if i not in l1:
+        l1.append(i)
+print(l1)
+
+#12
+#add the duplicate values into a list:
+l=[1,2,3,3,2,1,2]
+L1=[]
+dupl=0
+for i in l:
+    if i in l:
+        L1.append(i) 
+        dupl+=1
+print(L1)
