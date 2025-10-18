@@ -217,7 +217,7 @@ print()
 
 for i in range(5):
     for j in range(9):
-        if j==2 or i==0  :
+        if j==4 or i==4-j  or i==4 or j==4+i :
             print("X",end=" ")
         else:
             
