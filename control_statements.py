@@ -245,8 +245,8 @@ else:
 print()   
 #30
 #check the year is leap year or not :
-year=1996
-if year%4==0 or year%400==0 :            #also we didn't get for the 100 years and we can get the leap year of 400,800,...etc
+year=1900
+if year%4==0  :            #also we didn't get for the 100 years and we can get the leap year of 400,800,...etc
     print("leap year")
 else:
     print("not a leap year")
@@ -278,3 +278,255 @@ if user=="admin" and password=="1234":
     print("Login successfully")
 else:
     print("Enter valid user or password")
+    
+#33
+#check the discount >10000 means 30% discount, >5000 means 20% discount, >1000 means 10% discount finally <=1000 means no discount
+amount=5100
+if amount>10000:
+    discount=amount *(30/100)
+    print("Discount amount is ",discount)
+elif amount>5000:
+    discount=amount*(20/100)
+    print("Discount amount is ",discount)
+elif amount>1000:
+    discount=amount*(10/100)
+    print("Discount amount is ",discount)
+else:
+    print("No discount")
+
+#34
+#print the no. is amstrong or not :
+x=153
+x1=len(str(x))
+z=0
+for i in str(x):
+    z+=int(i)**x1
+print(z) 
+if x==z:
+    print(x," is amstrong number ")
+else:
+    print(x,"is not a amstrong number") 
+    
+#35
+#print the no. is amstrong or not -- without using str() in loop
+w=153
+t=w
+f2=0
+f3=len(str(w))
+while 0<w:
+    f1=w%10
+    f2+=f1**f3
+    w=w//10
+
+print(f2)  
+if  t==f2:
+    print(f2," is amstrong number ") 
+else:
+    print(f2," is not a amstrong number")
+
+#36
+#Print the elements in a string in a sequence:
+a="satyanaryana"
+for i in a:
+    print(i)
+    
+#37
+#Also we can print the set of characters in a word without using slice :
+a="satyanarayana"
+for i in range(4,10):
+    print(a[i],end="")
+print()
+
+#38
+#Reverse of a given string 
+z1=""
+for i in a:
+    z1=i+z1
+print("Reverse of a string is ",z1)  
+
+#39
+#In a statement reverse the single word :
+a1="satya is python developer"
+a2=a1.split(" ")
+a3=3    #initially im just using 1, but also we can get from the user/keyboard also
+s=''
+for i in range(1,len(a2)):   
+    if i==a3:
+        for j in a2[i]:
+            s=j+s
+        a2.insert(a3,s)
+        a2.pop(a3+1)
+print()     
+                 
+print("After reverse of a single word the string is  : "," ".join(a2))
+print()
+#40
+#In a statement delete  the middle element of the string 
+k1="python full stack"
+k2=k1.split()
+k3=len(k2)//2
+for i in range(1,len(k2)+1):
+    if i==k3:
+        k2.pop(i)
+print("After deleted the item the string will be "," ".join(k2))
+print()
+
+#41
+#print a particular string word in a sentence:
+l1=["python","full","stack"]
+y=2
+for i in range(1,len(l1)):
+    if l1[i]==l1[y]:
+        print("The requested item is :",l1[y])
+print()
+#42
+#count the particular character do u want to count that elements in a string:
+b1="I am python or generative AI dev"
+b2='a'  # bydefault im taking
+c=0
+for i in b1:
+    if i == b2:
+        c+=1
+print(f"The count of the {b2} is {c} ")
+print()
+
+#43
+#if the length of the string is odd means delete middle item otherwise delete two middle items:
+d="Abdullah"
+d2=len(d)//2
+d3=""
+for i in range(len(d)):
+    if d2==i:
+        d3=d[:d2-1]+d[d2+1:]
+        print(d3)    
+
+#44
+#sum of first and last element in a list:
+ll=[1,2,3,4,5]
+for i in range(len(ll)):
+    if i==len(ll)-1:
+        print(ll[i]+ll[0])  
+print()
+#45
+#print the number with single digit without use str:       
+x=129
+z=0
+while 0<x:
+    z=z*10+x%10
+    x=x//10
+while 0<z:
+    x=z%10
+    z=z//10
+    print(x)
+print()
+
+#46
+#use another way to delete the middle items in a string:
+s1="satyan"
+s2=len(s1)
+s3=[]
+for i in s1:
+    s3.append(i)
+if s2%2==1:
+    s3.pop(s2//2)
+else:
+    s3.pop(s2//2)
+    print(s3.pop((s2//2)-1))
+print(s3)
+#for i in range(len(s3)+1):
+#    if s2%2==1:
+#        if i==s2//2:
+#            s3.pop(i)
+#        else:
+#            s3.pop(i)
+#            s3.pop(i+1)
+#print(s3)      
+
+#47
+#print the cricketer got the century or not
+d={"kohli":123,"rohit":70,"klrahul":50}
+for i,j in d.items():
+    if j>=100:
+        print(i,"Got the century",j)
+    elif j>=50:
+        print(i,"Got the Half century",j) 
+    else:
+        print("Below Half_century") 
+print()
+       
+#48
+#print the string is a anagram or not 
+j1="abc"
+j2="cab"
+if sorted(j1)==sorted(j2):
+    print("It is anagram ")
+else:
+    print("It is not a anagram")
+print()   
+
+#49
+#print the number is amstrong or not using while:
+x=153
+y=len(str(x))
+s=0
+while 0<x:
+    z=x%10
+    s+=z**y 
+    x=x//10
+print(s)
+
+#50
+#check the no. is  palindrom of a number using while:
+f=121
+u=f
+o=0
+while 0<f:
+    x=f%10
+    o=o*10+x
+    f=f//10
+if o==u:
+    print(o, "is a palindrom number")
+else:
+    print(o,"is not a palindrom number")
+    
+#51
+#print the highest length word in a string 
+t="Python full stack"
+y=t.split(" ")
+for i in range(1,len(y)+1):
+    if len(y[i-1])>len(y[i-2]) and len(y[i-1])>len(y[i-3]):
+        print("Greater len word is  ",y[i-1])
+
+#52
+#print every digit in a number using while:
+r=1297
+char=0
+while 0<r:
+    char=char*10+r%10
+    r=r//10
+while 0<char:
+    r=char%10
+    char=char//10
+    print(r)
+print()
+#53
+#print the fibnocci sequence of a numbers using the swap numbers:
+a,b=0,1
+print(a)
+for i in  range(6):
+    a,b=b,a+b
+    print(a)
+print()
+
+#54
+#remove the spaces b/w the words 
+e="python     full     stack"
+y=e.split()
+for i in range(len(y)):
+    if y[i]==" ":
+        y.pop(i) 
+
+print(" ".join(y))
+
+#55
+#
