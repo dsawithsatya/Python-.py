@@ -529,4 +529,166 @@ for i in range(len(y)):
 print(" ".join(y))
 
 #55
-#
+#print the list of elements divisible by a number or not:
+g=[7,9,11,14,21,19,28]
+s=7
+d=[]
+for i in g:
+    if i%s==0:
+        d.append(i)
+print()
+
+#56
+#print the set of elements which is even numbers in a list:
+v=[1,2,3,4,5,6,7]
+s=0
+for i in v:
+    if i%2==0:
+        s+=i
+print("The sum of even numbers is ",s)
+
+print()
+
+#57
+#from above we can use range() and len() function:
+v=[1,2,3,4,5,6,7]
+s=0
+for i in range(len(v)):
+    if i%2==0:
+        s+=i
+print("The sum of odd numbers is ",s)
+print()
+
+
+#58
+#Print the odd numbers sum in a list:
+v=[1,2,3,4,5,6,7]
+s=0
+for i in v:
+    if i%2==1:
+        s+=i
+print("The sum of odd numbers is ",s)
+print()
+
+#59
+#from above we can use range function also:
+v=[1,2,3,4,5,6,7]
+s=0
+for i in range(len(v)):
+    if v[i]%2==1:
+        s+=i
+print("The sum of odd numbers is ",s)
+print()
+
+
+#60
+#print hi if the character is there else print bye:
+v="Python full stack"
+z="s"
+for i in v:
+    if z in i:
+        print("Hi")
+    else:
+        print("Bye")
+        
+#61
+#print the list of elements using concatination
+x=['a','b','c']
+x1=''
+for i in x:
+    x1+=i
+    
+print(x)
+print()
+
+#62
+#print the list of elements in a matrix way
+l1=[[1,2,3],[4,5,6],[7,8,9]]
+for i in l1:
+    for j in i:
+        print(j,end=" ")
+    print()
+print()
+
+#63
+#print the 5x5 * box using for loop;
+for i in range(5):
+    for j in range(5):
+        print("*",end=" ")
+    print()
+print()
+   
+#64
+#print the right side triangle:
+for i in range(6):
+    print("* "*i,end=" ")
+    print()
+
+print()
+#65
+#print the down right side triangle:
+
+for i in range(6):
+    if i==4 or j==4:
+        print("* "*(5-i),end=" ")
+    else:
+        print(" ",end=" ")
+    print()
+print()
+
+
+#66
+#print the even elements using odd number condition:
+for i in range (1,11):
+    if i%2==1:
+        continue
+    print(i)
+        
+#67
+#break the loop if the num is even:
+for i in range(1,10,3):
+    if i%2==0:
+        break
+    print("The numbers are",i)
+print()
+#68
+#pass if the condition is not usefull:
+for i in range(1,10):
+    if i%2==0:
+        pass
+    print(i,end=" ")
+print()
+print()
+
+#69
+#Take the list of elements and check with the condition and continue:
+h1=[1,2,"satya",5,7,8]
+for i in h1:
+    if i=="satya":
+        continue
+    print(i,end=" ")
+print() 
+
+#70
+#print the highest characters word in a list or a string :
+h2=["satya","narayana","sattya1432"]
+for i in range(len(h2)):
+    if len(h2[i-2])>len(h2[i-1]):
+        print("Highest characters are ",h2[i-2])
+
+#71
+#print the list of elements in reverse without slicing or reverse function:
+h4=[9,3,5,6,3]
+for i in range(len(h4)):
+    #h3.insert(1,h4[i-len([h4])])
+    h4[i],h4[i-1]=h4[i-1],h4[i]
+    print(h4)
+
+#72
+#same list can u print in desc order or asc order
+# h5=[]
+# for i in range(len(h3)+1):
+#     if h3[i-1]<h3[i]:
+#         h5.append(h3[i])        
+# print("Ascending order of the list is ",h5)   
+            

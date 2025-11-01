@@ -1,4 +1,21 @@
 from  set_operations import s1,s2,s3,s4,s5,s6
+from tuple_operations import t1,t2,t3,t4,t5,t6
 if(__name__=="__main__"):
     s1.test_case1()
+    print()
     s2.test_case2()
+    print()
+    s3.test_case3()
+    print()
+    s4.test_case4()
+    print()
+    s5.test_case5()
+    print()
+    s6.test_case6()
+    print()
+    t1.test_case7()
+    print()
+    t2.test_case8()
+    print()
+    t3.teset_case9()
+    print()
