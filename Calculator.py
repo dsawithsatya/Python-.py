@@ -75,26 +75,40 @@ from math import *
 class calc:
     @staticmethod
     def add():
+        a=int(input("Enter first number : "))
+        b=int(input("Enter second number : "))
         print("Addition is : ",a+b)
     @staticmethod
     def sub():
+        a=int(input("Enter first number : "))
+        b=int(input("Enter second number : "))
         print("Substraction is : ",a-b)
     @staticmethod
     def mul():
+        a=int(input("Enter first number : "))
+        b=int(input("Enter second number : "))
         print("Multiplication is : ",a*b)
     @staticmethod
     def div():
+        a=int(input("Enter first number : "))
+        b=int(input("Enter second number : "))
         print("Division is : ",a/b)
     @staticmethod
     def power():
+        a=int(input("Enter first number : "))
+        b=int(input("Enter second number : "))
         print("a Power b  is : ",a**b)
     @staticmethod
+    def squ():
+        a=int(input("Enter number to square : "))
+        print("Square of a number is : ",a**2)
+    @staticmethod
     def sina():
-        x=int(input("Enter a sin(number : )"))
+        x=int(input("Enter a sin(number) : "))
         print("Sin value of a : ",sin(x))
     @staticmethod
     def cosa():
-        y=int(input("Enter the cos(number) :"))
+        y=int(input("Enter the cos(number) : "))
         print("cos value of a : ",cos(y))
     @staticmethod
     def tana():
@@ -103,45 +117,62 @@ class calc:
     @staticmethod
     def loga():
         l=int(input("Enter the log(number) : "))
-        print("log value of a : ",log(a))
+        print("log value of a : ",log(l))
 
-while True:
-    a=int(input("Enter 1st number : "))
-    b=int(input("Enter 2nd number : "))
-    print("Select the operations from the given options ")
-    print()
-    print("=================================================\n")
-    print(" 1.addition\n","2.Substraction\n","3.Multiplication\n","4.Division\n","5.Sin\n","6.Cos\n","7.Tan\n","8.log\n")
-    print("=================================================")
-    print()
-    x=int(input("Enter your choice "))
-    if x==1:
-        t=calc()
-        t.add()
-    elif x==2:
-        t=calc()
-        t.sub()
-    elif x==3:
-        t=calc()
-        t.mul()
-    elif x==4:
-        t=calc()
-        t.div()
-    elif x==5:
-        t=calc()
-        t.sina()
-    elif x==6:
-        t=calc()
-        t.cosa()
-    elif x==7:
-        t=calc()
-        t.tana()
-    elif x==8:
-        t=calc()
-        t.loga()
+print("Do u have any query -- yes/no : ")
+x1=input("say Yes/No :")
+if x1=="yes":
+        while True:
+    # a=int(input("Enter 1st number : "))
+    # b=int(input("Enter 2nd number : "))
+                print("Select the operations from the given options ")
+                print()
+                print("=================================================\n")
+                print(" 1.addition\n","2.Substraction\n","3.Multiplication\n","4.Division\n","5.Sin\n","6.Cos\n","7.Tan\n","8.log\n","9.square\n")
+                print("=================================================")
+                print()
+                x=int(input("Enter your choice : "))
+                if x==1:
+                    t=calc()
+                    t.add()
+                elif x==2:
+                    t=calc()
+                    t.sub()
+                elif x==3:
+                    t=calc()
+                    t.mul()
+                elif x==4:
+                    t=calc()
+                    t.div()
+                elif x==5:
+                    t=calc()
+                    t.sina()
+                elif x==6:
+                    t=calc()
+                    t.cosa()
+                elif x==7:
+                    t=calc()
+                    t.tana()
+                elif x==8:
+                    t=calc()
+                    t.loga()
+                elif x==9:
+                    t=calc()
+                    t.squ()
+                
+                else:
+                    break
+                print("Do u have any query ")
+                x2=input("say yes/no : ")
+                if x2=="yes":
+                    pass
+                else:
+                    break
+                
+
+
     
-    else:
-        break
+        
     
         
     
